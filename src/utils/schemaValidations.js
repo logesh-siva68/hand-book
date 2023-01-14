@@ -1,10 +1,7 @@
 const Joi = require('joi')
 
-/***
- * User input Validations
- */
-
 /**
+ * User input Validations
  * @param req
  * @returns {validation;{}, error:{}}
  */
