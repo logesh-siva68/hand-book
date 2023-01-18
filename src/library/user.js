@@ -35,10 +35,11 @@ ex.loginUser = async (user) => {
     // plain pass - hashed
     const userWithOutPassword = { ...userData }
     delete userWithOutPassword.u_password
-    if (
-      userData &&
-            (await bcrypt.compare(user.password, userData.u_password))
-    ) {
+    const isValidPassword = await bcrypt.compare(
+      user.password,
+      userData.u_password
+    )
+    if (userData && isValidPassword) {
       return {
         userId: userData.u_id,
         token: generateToken(userWithOutPassword),
