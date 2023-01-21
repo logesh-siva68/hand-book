@@ -1,11 +1,9 @@
 const bcrypt = require('bcryptjs')
 const db = require('../data/user')
 const jwt = require('jsonwebtoken')
-const utilities = require('../utils')
+const utilities = require('../utils/utilities')
 
 const ex = module.exports
-
-// Insert - Register User
 
 ex.register = async (user) => {
   try {

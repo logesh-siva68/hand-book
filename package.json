@@ -2,10 +2,10 @@
     "name": "hand-book",
     "version": "1.0.0",
     "description": "Sharing information across the company",
-    "main": "src/app.js",
+    "main": "src/",
     "scripts": {
-        "start": "node src/app.js",
-        "dev": "nodemon src/app.js",
+        "start": "node src/",
+        "dev": "nodemon src/",
         "test": "jest ./test",
         "lint": "standard",
         "lint-fix": "standard --fix",

@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const utilities = require('../utils')
+const utilities = require('../utils/utilities')
 // Un-Auth Routes
 router.use('/auth', require('./security'))
 
