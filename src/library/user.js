@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs')
 const db = require('../data/user')
 const jwt = require('jsonwebtoken')
-const utilities = require('../utils/utilities')
+const utilities = require('../utilities/utilities')
 
 const ex = module.exports
 
