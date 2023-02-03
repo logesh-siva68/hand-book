@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const joiValidator = require('../utils/joiValidator')
+const joiValidator = require('../utilities/joiValidator')
 const libUser = require('../library/user')
 
 async function registerHandler (req, res, next) {
